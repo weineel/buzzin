@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import axios from 'axios'
+// import axios from 'axios'
 
-axios.get('/api/start-push2answer')
-  .then(response => console.log(response.data))
+// axios.get('/api/start-push2answer')
+//   .then(response => console.log(response.data))
 
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img alt="Vue logo" class="logo" src="@/assets/logo.png" height="125" />
   </header>
 
   <RouterView />
