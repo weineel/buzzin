@@ -8,17 +8,30 @@ import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.png" height="125" />
-  </header>
+  <div class="app-wrapper">
+    <header>
+      <img alt="Vue logo" class="logo" src="@/assets/logo.png" height="125" />
+    </header>
 
-  <RouterView />
+    <RouterView class="app-body" />
+  </div>
 </template>
 
 <style scoped>
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.app-body {
+  height: 0;
+  flex: 1;
+}
+
 header {
   display: flex;
   place-items: center flex-end;
+  flex-shrink: 0;
 }
 
 .logo {
